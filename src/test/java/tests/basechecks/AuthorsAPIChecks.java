@@ -5,9 +5,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import framework.base.BaseTest;
 import framework.entity.request.AuthorCreationUpdateRequest;
-import framework.entity.request.BookCreationUpdateRequest;
 import framework.entity.response.author.Author;
-import framework.entity.response.book.Book;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 

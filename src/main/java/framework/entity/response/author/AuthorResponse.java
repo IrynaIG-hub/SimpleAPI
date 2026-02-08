@@ -13,7 +13,6 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class AuthorResponse {
-
 	@JsonProperty("Response")
 	private List<Author> response;
 

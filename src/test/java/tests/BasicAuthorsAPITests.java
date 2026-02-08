@@ -1,11 +1,8 @@
 package tests;
 
 import data.AuthorsData;
-import data.BooksData;
 import framework.base.api.authors.AuthorsApiManager;
-import framework.base.api.books.BooksApiManager;
 import framework.entity.request.AuthorCreationUpdateRequest;
-import framework.entity.request.BookCreationUpdateRequest;
 import framework.entity.response.author.Author;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
