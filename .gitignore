@@ -1,0 +1,6 @@
+# Ignore temp folders
+target
+
+# Ignore temp files
+.allure/
+.idea/
