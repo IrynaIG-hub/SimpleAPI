@@ -116,15 +116,15 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>io.qameta.allure</groupId>-->
-<!--                <artifactId>allure-maven</artifactId>-->
-<!--                <version>2.10.0</version>-->
-<!--                <configuration>-->
-<!--                    <reportDirectory>target/allure-report</reportDirectory>-->
-<!--                    <reportVersion>2.13.0</reportVersion>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportDirectory>target/allure-report</reportDirectory>
+                    <reportVersion>2.13.0</reportVersion>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
