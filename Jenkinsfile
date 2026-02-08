@@ -20,16 +20,17 @@ pipeline {
                     // Run Maven on Unix agent
                     sh "mvn clean install"
                 }
+            post {
+                 always {
+                      allure([
+                          reportBuildPolicy: 'ALWAYS',
+                          results: [[path: 'target/allure-results']]
+                      ])
+                 }
             }
-       }
+
+     }
+
 }
-        post {
-              always {
-                   allure([
-                       reportBuildPolicy: 'ALWAYS',
-                       results: [[path: 'target/allure-results']]
-                   ])
-              }
-       }
 
 
