@@ -11,7 +11,7 @@ import static framework.base.BaseTest.getBaseUrl;
 public class AuthorsApiManager extends ApiManager {
 
     public Response createAuthor(AuthorCreationUpdateRequest request) {
-        log.info("Create author request is created");
+        log.info("Create author request");
         return createRequestSpecification(getBaseUrl(), "all")
                 .body(AuthorCreationUpdateRequest.builder()
                         .id(request.getId())
@@ -26,7 +26,7 @@ public class AuthorsApiManager extends ApiManager {
     }
 
     public Response updateAuthor(AuthorCreationUpdateRequest request) {
-        log.info("Update author request is created");
+        log.info("Update author request");
         return createRequestSpecification(getBaseUrl(), "body")
                 .body(AuthorCreationUpdateRequest.builder()
                         .id(request.getId())
@@ -41,7 +41,7 @@ public class AuthorsApiManager extends ApiManager {
     }
 
     public Response getAuthor(String id) {
-        log.info("Get author request is created");
+        log.info("Get author reques");
         return createRequestSpecification(getBaseUrl(), "all")
                 .with()
                 .header("accept", "*/*")
@@ -50,7 +50,7 @@ public class AuthorsApiManager extends ApiManager {
     }
 
     public Response getAuthors() {
-        log.info("Get authors request is created");
+        log.info("Get authors request");
         return createRequestSpecification(getBaseUrl(), "all")
                 .with()
                 .header("accept", "*/*")
@@ -59,7 +59,7 @@ public class AuthorsApiManager extends ApiManager {
     }
 
     public Response deleteAuthor(String id) {
-        log.info("Delete author request is created");
+        log.info("Delete author request");
         return createRequestSpecification(getBaseUrl(), "headers")
                 .with()
                 .header("Content-Type", "application/json")

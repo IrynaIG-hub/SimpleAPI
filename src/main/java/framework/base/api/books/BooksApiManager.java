@@ -11,7 +11,7 @@ import static framework.base.BaseTest.getBaseUrl;
 public class BooksApiManager extends ApiManager {
 
     public Response createBook(BookCreationUpdateRequest request) {
-        log.info("Create book request is created");
+        log.info("Create book request");
         return createRequestSpecification(getBaseUrl(), "all")
                 .body(BookCreationUpdateRequest.builder()
                         .id(request.getId())
@@ -28,7 +28,7 @@ public class BooksApiManager extends ApiManager {
     }
 
     public Response updateBook(BookCreationUpdateRequest request) {
-        log.info("Update book request is created");
+        log.info("Update book request");
         return createRequestSpecification(getBaseUrl(), "body")
                 .body(BookCreationUpdateRequest.builder()
                         .id(request.getId())
@@ -45,7 +45,7 @@ public class BooksApiManager extends ApiManager {
     }
 
     public Response getBook(String id) {
-        log.info("Get book request is created");
+        log.info("Get book request");
         return createRequestSpecification(getBaseUrl(), "all")
                 .with()
                 .header("accept", "*/*")
@@ -54,7 +54,7 @@ public class BooksApiManager extends ApiManager {
     }
 
     public Response getBooks() {
-        log.info("Get books request is created");
+        log.info("Get books request");
         return createRequestSpecification(getBaseUrl(), "all")
                 .with()
                 .header("accept", "*/*")
@@ -64,7 +64,7 @@ public class BooksApiManager extends ApiManager {
     }
 
     public Response deleteBook(String id) {
-        log.info("Delete books request is created");
+        log.info("Delete books request");
         return createRequestSpecification(getBaseUrl(), "headers")
                 .with()
                 .header("Content-Type", "application/json")

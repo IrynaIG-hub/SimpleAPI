@@ -13,35 +13,35 @@ public class ApiManager {
 
         switch(logLevel) {
             case "all":
-                log.info("Request specification with log level ALL is created");
                 clientRequestSpecification =  RestAssured.given().
                         log().all()
                         .baseUri(baseUri)
                         .config(RestAssured.config().sslConfig(new SSLConfig().relaxedHTTPSValidation()))
                         .expect().log().all().request();
+                log.info("Request specification with log level ALL is created");
                 break;
             case "headers":
-                log.info("Request specification with log level HEADERS is created");
                 clientRequestSpecification =  RestAssured.given().
                         log().headers()
                         .baseUri(baseUri)
                         .config(RestAssured.config().sslConfig(new SSLConfig().relaxedHTTPSValidation()))
                         .expect().log().headers().request();
+                log.info("Request specification with log level HEADERS is created");
                 break;
             case "body":
-                log.info("Request specification with log level BODY is created");
                 clientRequestSpecification =  RestAssured.given().
                         log().body()
                         .baseUri(baseUri)
                         .config(RestAssured.config().sslConfig(new SSLConfig().relaxedHTTPSValidation()))
                         .expect().log().body().request();
+                log.info("Request specification with log level BODY is created");
                 break;
             default:
-                log.info("Request specification without logging is created");
                 clientRequestSpecification = RestAssured.given()
                         .baseUri(baseUri)
                         .config(RestAssured.config().sslConfig(new SSLConfig().relaxedHTTPSValidation()))
                         .expect().request();
+                log.info("Request specification without logging is created");
         }
 
         return clientRequestSpecification;
