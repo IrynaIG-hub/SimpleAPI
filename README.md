@@ -21,4 +21,4 @@ Tests run and allure report
 
 This test framework tests APIs that relates to Books management and Authors management. There are several tests that checks positive scenarios 
 such as entities creation/update/delete and get information about those entities or entity by id as well as negative to see tests failures in Allure report.
-Base url is https://fakerestapi.azurewebsites.net and keeps in env.properties file. Also there is an allure.properties file that can have allure properties.
+Base url is https://fakerestapi.azurewebsites.net and its saved in env.properties file. Also there is an allure.properties file that can have allure properties.
