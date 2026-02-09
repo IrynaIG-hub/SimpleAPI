@@ -1,8 +1,8 @@
 Tests run and allure report
 # Base set up:
-    Install Java set up in path in Environment variables;
-    Download Maven set up in path in Environment variables;
-	Download Allure set up in path in Environment variables;
+    Install Java and set up in path in Environment variables;
+    Download Maven and set up in path in Environment variables;
+	Download Allure and set up in path in Environment variables;
 
 	
 ### **Run test scenario via Maven command:**
@@ -17,10 +17,6 @@ Tests run and allure report
 * Generate report via mvn command: 'allure generate --single-file target/allure-results --clean' and report is generated in ./target/allure-report
   Report is ./target/allure-report/index.html file.
 * Command 'allure serve target/allure-results' generates report and opens it in Chrome browser in graphical representation
-
-
-
-
 
 
 This test framework tests APIs that relates to Books management and Authors management. There are several tests that checks positive scenarios 
