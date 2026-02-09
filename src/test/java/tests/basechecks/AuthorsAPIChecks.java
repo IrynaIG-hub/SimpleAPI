@@ -35,7 +35,7 @@ public class AuthorsAPIChecks extends BaseTest {
             ex.printStackTrace();
         }
         return Collections.<Author>emptyList();
-    };
+    }
 
     protected Author getAuthor(String json) {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -45,7 +45,7 @@ public class AuthorsAPIChecks extends BaseTest {
             ex.printStackTrace();
         }
         return null;
-    };
+    }
 
     protected void validateAuthors(List<Author> authors) {
         authors.stream()
@@ -56,6 +56,5 @@ public class AuthorsAPIChecks extends BaseTest {
                     assertThat(!author.getLastName().isEmpty()).as("Author last name is not correct").isTrue();
                 });
     }
-
 
 }

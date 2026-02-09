@@ -40,7 +40,7 @@ public class BooksAPIChecks extends BaseTest {
             ex.printStackTrace();
         }
         return Collections.<Book>emptyList();
-    };
+    }
 
     protected Book getBook(String json) {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -50,7 +50,7 @@ public class BooksAPIChecks extends BaseTest {
             ex.printStackTrace();
         }
         return null;
-    };
+    }
 
     protected void validateBooks(List<Book> books) {
         books.stream()
