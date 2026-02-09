@@ -14,9 +14,9 @@ Tests run and allure report
 
 ### **Generate and view report:**
 * Test results are generated in ./target/allure-results of the current module
-* Generate report via mvn command: 'allure generate --single-file target/allure-results --clean' and report is generated in ./target/allure-report
+* Generate report via mvn command: 'allure generate --single-file target/allure-results --clean' and report is generated in ./target/allure-report.
   Report is ./target/allure-report/index.html file.
-* Command 'allure serve target/allure-results' generates report and opens it in Chrome browser in graphical representation
+* Command 'allure serve target/allure-results' generates report and opens it in Chrome browser in graphical representation.
 
 
 This test framework tests APIs that relates to Books management and Authors management. There are several tests that checks positive scenarios 
